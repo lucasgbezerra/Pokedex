@@ -1,12 +1,11 @@
-import { Button, ButtonGroup } from '@chakra-ui/react'
-import { colors } from '../../styles/Colors'
+import { Button } from '@chakra-ui/react'
 
 export function DetailsButton() {
     return (
         <Button
-            bg={colors.green}
+            bg={"purple.500"}
             variant='unstyled'
-            color={colors.white}
+            color={"white"}
             w='100%'
             borderRadius="0 0 24px 24px"
         >

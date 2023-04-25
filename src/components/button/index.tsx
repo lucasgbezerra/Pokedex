@@ -1,9 +1,14 @@
 import { Button } from '@chakra-ui/react'
 
-export function DetailsButton() {
+type DetailsButtonProps = {
+    btnColor?: string;
+  };
+
+  export function DetailsButton( {btnColor} : DetailsButtonProps) {
+    console.log(btnColor)
     return (
         <Button
-            bg={"purple.500"}
+            bg={btnColor}
             variant='unstyled'
             color={"white"}
             w='100%'

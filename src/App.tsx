@@ -4,36 +4,18 @@ import { PokemonCard } from './components/pokemonCard';
 import { useEffect, useMemo, useState } from 'react';
 import { getPokemonList } from './components/api/getPokemonList';
 import { IPokemonList } from './services/pokemon';
+import { Pokedex } from './components/pokedex';
 
 export function App() {
-  const [pokemonList, setPokemonList] = useState<IPokemonList | null>(null)
-
-  const listPokemons = async () => {
-    await await getPokemonList()
-      .then((response) => setPokemonList(response))
-      .catch((error) => {
-        console.error(`An unexpected error ocourred while getting pokemons`);
-      });
-  };
-
-  useEffect(() => {
-    listPokemons()
-  }, [])
-
-  const renderPokemons = () => {
-    return pokemonList?.results?.map((pokemon) => (<PokemonCard url={pokemon?.url}/>))
-  }
 
   return (
-    <Flex
-      flexDir='row'
-      flexWrap="wrap"
+    <Box
       backgroundColor={colors.background[100]}
       minHeight="100vh"
       justifyContent="center"
-      gap="50px"
+      alignItems="center"
     >
-      {renderPokemons()}
-    </Flex>
+      <Pokedex />
+    </Box>
   )
 }

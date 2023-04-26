@@ -11,10 +11,15 @@ Para a estilização foi utilizado [ChakraUI](https://chakra-ui.com/), que acele
 Os dados para construção da aplicação são da API: [PokéApi](https://pokeapi.co/). O projeto foi baseado no projeto de [carlosdancr](https://github.com/carlosdancr/pokedex-react).
 
 O protótipo pode ser encontrados no [figma](https://www.figma.com/file/PZ2wPFD5p7gjZvLfEvmQF6/Pok%C3%A9dex-(Copy)?node-id=0%3A1&t=OHS5jToOGiQ8mOrW-1)
+## Depêndencias
+- Instale o [Nodejs](https://nodejs.org/en/download) LTS
+- Instale o [NPM](https://docs.npmjs.com/) LTS
+- [Tutorial para linux](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
+
 ## Como executar o projeto?
 
 ```
-cd pokedex
+cd Pokedex/
 npm install
 npm run dev 
 ```

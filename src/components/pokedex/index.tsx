@@ -29,9 +29,10 @@ export const Pokedex = () => {
         <Flex
             flexDir='row'
             flexWrap="wrap"
-            maxW='60%'
+            maxW='80%'
             margin='auto'
             gap="32px"
+            justify='center'
         >
             {renderPokemons()}
         </Flex>
